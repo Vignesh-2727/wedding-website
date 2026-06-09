@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abhinesh ❤️ Gouthami</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- FLOWERS -->
+
+    <div class="flowers">
+        <span>🌸</span>
+        <span>🌺</span>
+        <span>🌸</span>
+        <span>🌺</span>
+        <span>🌸</span>
+        <span>🌺</span>
+    </div>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="content" data-aos="fade-up">
+
+            <h2 class="invite-text">
+                Wedding Invitation
+            </h2>
+
+            <h1 class="couple-name">
+                Abhinesh Goud <span>&</span> Gouthami
+            </h1>
+
+            <p class="date">
+                5 July 2026
+            </p>
+
+            <button class="open-btn">
+                Open Invitation
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- COUPLE SECTION -->
+
+    <section class="couple-section">
+
+        <div class="section-title" data-aos="fade-up">
+            <h2>The Couple</h2>
+        </div>
+
+        <div class="couple-container">
+
+            <!-- GROOM -->
+
+            <div class="person-card" data-aos="fade-right">
+
+                <div class="image-box">
+                    <img src="{{ url_for('static', filename='images/groom.jpg') }}">
+                </div>
+
+                <h3>Abhinesh Goud</h3>
+
+                <p>
+                    Together with family, inviting you with love.
+                </p>
+
+            </div>
+
+            <!-- BRIDE -->
+
+            <div class="person-card" data-aos="fade-left">
+
+                <div class="image-box">
+                    <img src="{{ url_for('static', filename='images/bride.jpg') }}">
+                </div>
+
+                <h3>Gouthami</h3>
+
+                <p>
+                    Two souls, one beautiful forever journey.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COUNTDOWN -->
+
+    <section class="countdown-section">
+
+        <div class="countdown-overlay"></div>
+
+        <div class="countdown-content" data-aos="zoom-in">
+
+            <h2>Save The Date</h2>
+
+            <p class="wedding-date">
+                5 July 2026
+            </p>
+
+            <div class="countdown">
+
+                <div class="time-box">
+                    <span id="days">0</span>
+                    <p>Days</p>
+                </div>
+
+                <div class="time-box">
+                    <span id="hours">0</span>
+                    <p>Hours</p>
+                </div>
+
+                <div class="time-box">
+                    <span id="minutes">0</span>
+                    <p>Minutes</p>
+                </div>
+
+                <div class="time-box">
+                    <span id="seconds">0</span>
+                    <p>Seconds</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VENUE -->
+
+    <section class="venue-section">
+
+        <div class="venue-container" data-aos="fade-up">
+
+            <h2>Wedding Venue</h2>
+
+            <div class="venue-card">
+
+                <h3>Renuka Garden Function Hall</h3>
+
+                <p>
+                    Kamareddy
+                </p>
+
+                <a
+                    href="https://www.google.com/maps/search/Renuka+Garden+Function+Hall+Kamareddy"
+                    target="_blank"
+                    class="map-btn">
+
+                    View Location
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALLERY -->
+
+    <section class="gallery-section">
+
+        <div class="gallery-title" data-aos="fade-up">
+            <h2>Our Memories</h2>
+        </div>
+
+        <div class="gallery-container">
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery1.jpg') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery2.jpg') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery3.jpg') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery4.jpg') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery5.jpg') }}">
+            </div>
+
+            <div class="gallery-item">
+                <img src="{{ url_for('static', filename='images/gallery6.jpg') }}">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JS -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
