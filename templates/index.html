@@ -9,31 +9,50 @@
 
     <title>Abhinesh ❤️ Gouthami</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-    <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
 
-    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <!-- FLOWERS -->
+    <!-- LOADER -->
 
-    <div class="flowers">
-        <span>🌸</span>
-        <span>🌺</span>
-        <span>🌸</span>
-        <span>🌺</span>
-        <span>🌸</span>
-        <span>🌺</span>
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <h1>
+                Abhinesh <span>&</span> Gouthami
+            </h1>
+
+            <p>Wedding Invitation</p>
+
+            <div class="loader-line"></div>
+
+        </div>
+
     </div>
 
-    <!-- HERO SECTION -->
+    <!-- PARTICLES -->
+
+    <div class="particles">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!-- HERO -->
 
     <section class="hero">
 
@@ -61,7 +80,7 @@
 
     </section>
 
-    <!-- COUPLE SECTION -->
+    <!-- COUPLE -->
 
     <section class="couple-section">
 
@@ -70,8 +89,6 @@
         </div>
 
         <div class="couple-container">
-
-            <!-- GROOM -->
 
             <div class="person-card" data-aos="fade-right">
 
@@ -86,8 +103,6 @@
                 </p>
 
             </div>
-
-            <!-- BRIDE -->
 
             <div class="person-card" data-aos="fade-left">
 
@@ -161,9 +176,7 @@
 
                 <h3>Renuka Garden Function Hall</h3>
 
-                <p>
-                    Kamareddy
-                </p>
+                <p>Kamareddy</p>
 
                 <a
                     href="https://www.google.com/maps/search/Renuka+Garden+Function+Hall+Kamareddy"
@@ -218,13 +231,21 @@
 
     </section>
 
-    <!-- JS -->
+    <!-- POPUP -->
+
+    <div id="imagePopup">
+
+        <span id="closePopup">&times;</span>
+
+        <img id="popupImg">
+
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
     <script>
         AOS.init({
-            duration: 1200,
+            duration:1200,
         });
     </script>
 
